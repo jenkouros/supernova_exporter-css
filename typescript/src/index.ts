@@ -7,7 +7,7 @@
     // Create array with all path segments and token name at the end
     
     const segments = [...tokenGroup.path];
-    if (!tokenGroup.isRoot && token.TokenType !== 'Typography') {
+    if (!tokenGroup.isRoot && token.tokenType !== 'Typography') {
       segments.push(tokenGroup.name)
     }
     segments.push(token.name);
