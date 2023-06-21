@@ -5,8 +5,9 @@
   "readableVariableName",
   function (token, tokenGroup, prefix) {
     // Create array with all path segments and token name at the end
+    
     const segments = [...tokenGroup.path];
-    if (!tokenGroup.isRoot) {
+    if (!tokenGroup.isRoot && token.TokenType !== 'Typography') {
       segments.push(tokenGroup.name)
     }
     segments.push(token.name);
