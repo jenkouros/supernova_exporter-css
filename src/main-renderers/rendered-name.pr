@@ -24,8 +24,7 @@ Rendered as:
 [group1][group2][...][name];
 
 *}
-{[ let tokenGroup = ds.tokenGroupContainingTokenId(context.id) /]}
-
+{[ let tokenGroup = "" /]}
 
 {[ let prefix = "" /]}
 {[ switch context.tokenType ]}
