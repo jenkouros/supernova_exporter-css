@@ -24,7 +24,10 @@ Rendered as:
 [group1][group2][...][name];
 
 *}
-{[ let tokenGroup = "" /]}
+{[ let tokenGroup = ds.tokenGroupContainingTokenId(context.id) /]}
+{[ if (context.tokenType === "Typography" ) ]}
+  {[ tokenGroup.isRoot = true /]}
+{[/]}
 
 {[ let prefix = "" /]}
 {[ switch context.tokenType ]}
