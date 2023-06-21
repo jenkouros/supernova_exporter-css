@@ -26,7 +26,7 @@ Rendered as:
 *}
 {[ let tokenGroup = ds.tokenGroupContainingTokenId(context.id) /]}
 {[ if (context.tokenType === "Typography" ) ]}
-  {[ set tokenGroup.isRoot = true /]}
+  {[ tokenGroup = { path: [], isRoot: true } /]}
 {[/]}
 
 {[ let prefix = "" /]}
