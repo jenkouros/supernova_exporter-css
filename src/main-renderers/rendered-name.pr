@@ -25,8 +25,8 @@ Rendered as:
 
 *}
 {[ let tokenGroup = ds.tokenGroupContainingTokenId(context.id) /]}
-{[ if (context.tokenType == "Typography" ) ]}
-/* {{ let tokenGroup = "" }} */
+{[ if (context.tokenType === "Typography" ) ]}
+  {{ "tokenGroup" = "" }}
 {[/]}
 
 {[ let prefix = "" /]}
