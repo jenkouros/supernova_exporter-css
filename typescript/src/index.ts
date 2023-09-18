@@ -8,6 +8,9 @@
     
     const segments = [...tokenGroup.path];
     if (!tokenGroup.isRoot && token.tokenType !== 'Typography' && token.tokenType !== 'Gradient') {
+     segments.push('DD');
+     segments.push(token.tokenType);
+     segments.push('RR');
       segments.push(tokenGroup.name)
     }
     segments.push(token.name);
