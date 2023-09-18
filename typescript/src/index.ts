@@ -63,7 +63,7 @@ Pulsar.registerFunction("gradientAngle", function(from, to) {
 Pulsar.registerPayload("behavior", {
   colorTokenPrefix: "color",
   borderTokenPrefix: "border",
-  gradientTokenPrefix: "gradient",
+  gradientTokenPrefix: "",
   measureTokenPrefix: "measure",
   shadowTokenPrefix: "shadow",
   typographyTokenPrefix: "typography",
