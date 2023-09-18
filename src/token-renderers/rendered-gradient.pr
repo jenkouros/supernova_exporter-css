@@ -8,6 +8,7 @@ Source data: Color Value (https://developers.supernova.io/design-system-data/tok
 Note: Value is passed as `context` property because it is injected
 
 {
+  "tokenType": "Gradient"
   "value": {
     "from": {
       "x": double
